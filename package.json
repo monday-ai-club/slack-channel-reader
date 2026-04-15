@@ -1,0 +1,10 @@
+{
+  "name": "slack-channel-reader",
+  "version": "1.0.0",
+  "description": "OpenClaw plugin for reading Slack channel messages",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/web-api": "^7.0.0"
+  }
+}
