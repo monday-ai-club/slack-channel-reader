@@ -1,0 +1,27 @@
+{
+  "name": "slack-channel-reader",
+  "displayName": "Slack Channel Reader",
+  "version": "2.0.0",
+  "description": "Read messages and threads from Slack channels. Exposes slack_read_channel and slack_read_thread tools.",
+  "author": "Ocana Viva",
+  "license": "MIT",
+  "category": "communication",
+  "type": "plugin",
+  "config": {
+    "SLACK_BOT_TOKEN": {
+      "type": "string",
+      "required": false,
+      "description": "Slack Bot OAuth token (xoxb-...). Optional — if not set, the token is automatically read from the OpenClaw gateway config (channels.slack.botToken). Requires channels:history, groups:history, and channels:read scopes."
+    }
+  },
+  "tools": [
+    {
+      "name": "slack_read_channel",
+      "description": "Read message history from a Slack channel"
+    },
+    {
+      "name": "slack_read_thread",
+      "description": "Read replies in a Slack thread"
+    }
+  ]
+}
